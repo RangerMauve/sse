@@ -13,7 +13,9 @@
 
 Guide to using Server Sent Events on [mdn](https://developer.mozilla.org/en-US/docs/Server-sent_events/Using_server-sent_events);
 
-Uses API from [EventEmitter2](https://github.com/asyncly/EventEmitter2);
+Uses API from [EventEmitter2](https://github.com/asyncly/EventEmitter2)
+
+Exports constructor which takes a URL to listen to events on.
 
 ``` javascript
   var SSE = require("sse");
