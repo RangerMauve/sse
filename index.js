@@ -7,6 +7,7 @@
 var EventEmitter = require("eventemitter2");
 
 function SSE(url, options) {
+	if (!(this instanceof SSE)) return new SSE(url, options);
 	EventEmitter.call(this);
 	var self = this;
 	this.setMaxListeners(0);
