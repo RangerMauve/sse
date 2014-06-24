@@ -19,7 +19,7 @@ Exports constructor which takes a URL to listen to events on.
 
 ``` javascript
   var SSE = require("sse");
-  var events = SSE("/events");
+  var events = new SSE("/events");
   events.on("message",function(data){
   	console.log(data);
   });
