@@ -1,0 +1,30 @@
+{
+  "name": "SSE",
+  "main": "build/build.js",
+  "version": "1.0.1",
+  "homepage": "https://github.com/RangerMauve/sse",
+  "authors": [
+    "RangerMauve <RangerMauve@hotmail.com>"
+  ],
+  "description": "Server Sent Events library for making EventSource nicer to work with",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "sse",
+    "eventsource",
+    "push",
+    "notifications"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
