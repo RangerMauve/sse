@@ -9,15 +9,25 @@
 
     $ component install rangermauve/sse
 
-## API
+## Usage
 
+Guide to using Server Sent Events on [mdn](https://developer.mozilla.org/en-US/docs/Server-sent_events/Using_server-sent_events);
 
+Uses API from [EventEmitter2](https://github.com/asyncly/EventEmitter2);
+
+``` javascript
+  var SSE = require("sse");
+  var events = SSE("/events");
+  events.on("message",function(data){
+  	console.log(data);
+  });
+```
 
 ## License
 
   The MIT License (MIT)
 
-  Copyright (c) 2014 <copyright holders>
+  Copyright (c) 2014 RangerMauve
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
