@@ -7,10 +7,11 @@
 var EventEmitter = require("eventemitter2");
 
 function SSE(url, options) {
+	EventEmitter.call(this);
 	var self = this;
+	this.setMaxListeners(0);
 	var sse = new EventSource(url);
 	this.connection = sse
-	EventEmitter.call(this);
 	this.has_registered = {};
 	sse.onerror = function (e) {
 		self.emit("error", e);
