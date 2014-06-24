@@ -2,9 +2,16 @@
   "name": "sse",
   "repo": "rangermauve/sse",
   "description": "Server Sent Events library for making EventSource nicer to work with",
-  "version": "0.0.1",
-  "keywords": ["sse","eventsource","push","notifications"],
-  "dependencies": {},
+  "version": "1.0.0",
+  "keywords": [
+    "sse",
+    "eventsource",
+    "push",
+    "notifications"
+  ],
+  "dependencies": {
+    "asyncly/EventEmitter2": "*"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",
