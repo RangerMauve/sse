@@ -2,7 +2,7 @@
   "name": "sse",
   "repo": "rangermauve/sse",
   "description": "Server Sent Events library for making EventSource nicer to work with",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "sse",
     "eventsource",
