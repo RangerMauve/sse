@@ -35,6 +35,7 @@ SSE.prototype._listen_to_sse = function (event) {
 
 SSE.prototype._emit_sse = function (event, e) {
 	var data = e.data;
+	var self = this;
 	try {
 		var parsed = JSON.parse(data);
 		self.emit(event, parsed);
