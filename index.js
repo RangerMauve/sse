@@ -22,7 +22,7 @@ function SSE(url, options) {
 	}
 }
 
-SSE.prototype = Object.create(EventEmitter.prototype);
+SSE.prototype = Object.create(new EventEmitter());
 
 SSE.prototype._listen_to_sse = function (event) {
 	if (event in this.has_registered) return;
