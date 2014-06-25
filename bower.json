@@ -1,7 +1,7 @@
 {
   "name": "SSE",
   "main": "build/build.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "https://github.com/RangerMauve/sse",
   "authors": [
     "RangerMauve <RangerMauve@hotmail.com>"
