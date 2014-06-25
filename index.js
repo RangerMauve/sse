@@ -4,7 +4,7 @@
  * Copyright (c) 2014 RangerMauve
  * Licensed under the MIT license
  */
-var EventEmitter = require("eventemitter2");
+var EventEmitter = require("eventemitter2").EventEmitter2;
 
 function SSE(url, options) {
 	if (!(this instanceof SSE)) return new SSE(url, options);
