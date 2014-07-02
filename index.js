@@ -53,4 +53,8 @@ SSE.prototype.close = function () {
 	this.connection.close();
 }
 
+SSE.prototype.isOpen = function () {
+	return this.connection.readyState === this.connection.OPEN;
+}
+
 module.exports = SSE;
