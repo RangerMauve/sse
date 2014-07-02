@@ -49,4 +49,8 @@ SSE.prototype.on = function (event) {
 	EventEmitter.prototype.on.apply(this, arguments);
 }
 
+SSE.prototype.close = function () {
+	this.connection.close();
+}
+
 module.exports = SSE;
